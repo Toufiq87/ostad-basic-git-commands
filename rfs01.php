@@ -1,17 +1,68 @@
 <?php
+$num = 20;
+switch($num){
+    case 10:
+echo("number is equals to 10");
+break;
+case 20:
+echo("number is equal to 20");
+break;
+case 30:
+echo(number is equal to 30");
+break;
+defalt:
+echo(number is not equal to 10,20 or 30");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 $Marks = "80";
 if($Marks>80){
     echo "A+"
 }
-*/
+
+$marks = 57;
+if ($marks<33){
+    echo "fail";
+}
+else if ($marks>=34 && $marks<50){
+    echo "D grade";
+}
+else if ($marks>= 50 && $marks<65){
+    echo "C grade";
+}
+else if ($marks>=65 && $marks<80){
+    echo "B grade";
+}
+else if ($marks>=80 && $marks<90){
+    echo "A grade";
+
+}
+else if ($marks>=90 && $marks<100){
+    echo "A+ grade";
+}
+else {
+    echo "Invalid input";
+}
 
 
 
-
-
-
-
+/*
 $myAge = 32;
 if($myAge>18){
     echo "You are audult";
@@ -19,7 +70,7 @@ if($myAge>18){
 else{
     echo "You are child";
 }
-
+*/
 
 
 
