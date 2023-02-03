@@ -1,4 +1,28 @@
 <?php
+
+$planet1 = "Mercary";
+$planet2 = "Jupitar";
+echo "The smallest planet is ".$planet1." and the biggest planet is ".$planet2."\n"; //"<br/>";
+echo "The smallest planet is {$planet1} and the biggest planet is {$planet2}\n"; 
+printf("The smallest planet is %s and the biggest planet is %s\n",strtoupper($planet1), strreev($planet2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 $num = 20;
 switch($num){
     case 10:
@@ -8,10 +32,11 @@ case 20:
 echo("number is equal to 20");
 break;
 case 30:
-echo(number is equal to 30");
+echo("number is equal to 30");
 break;
 defalt:
-echo(number is not equal to 10,20 or 30");
+echo("number is not equal to 10,20 or 30");
+
 }
 
 
