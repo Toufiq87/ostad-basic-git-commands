@@ -1,5 +1,318 @@
 <?php
 
+
+$tuition = <Tuition Fee>;
+
+$commission = ($tuition > 20000) ? ($tuition * 0.25) :
+              (($tuition > 10000 && $tuition < 20000) ? 0.2 * $tuition :
+              (($tuition > 7000 && $tuition < 10000) ? 0.15 * $tuition :
+              ("Invalid data")));
+              
+echo "Commission: $commission";
+
+
+
+
+
+
+
+
+
+
+/*
+
+$commission_amount = ($tuition_fee >= $20000) ? ($tuition_fee * 0.25) : 
+                     (($tuition_fee >= $10000 && $tuition_fee < $20000) ? ($tuition_fee * 0.20) : 
+                     (($tuition_fee >= $7000 && $tuition_fee < $10000) ? ($tuition_fee * 0.15) : 
+                     (($tuition_fee < $7000) ? "Invalid Data" : 0)));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+$marks = 65;  
+if ($marks >= 60) {
+    $grade = "First Division";
+} elseif ($marks >= 45) {
+    $grade = "Second Division";
+} elseif ($marks >= 33) {
+    $grade = "Third Division";
+} else {
+    $grade = "Fail";
+}
+
+echo "Student's grade: " . $grade;
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+$x = 5;
+echo $x;
+echo "<br />";
+echo $x+++$x++;
+
+
+$person = [
+
+]
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+$looser = “a”;
+$b = "$looser";
+echo $b;
+
+
+
+
+/*
+
+var_dump(123);
+var_dump(0123);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+define("GREETING", "Welcome to PHP", true);
+echo greeting;
+}
+?>
+
+
+
+/*
+$n = 13;
+if($n % 2 == 0){
+    echo "$n is an even number";
+}else{
+    echo "$n is a odd number";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+$fname = "Toufiq";
+ $lname = "Elahi";
+ $middlename = "Nothing";
+
+ //printf('His name is %3$s %1$s %2$s',$fnane,$middlename,$lname);
+
+ printf('The Binary eqivalent of %1$d is %1$b',12);
+ echo "\n";
+ $n = 45.126;
+ printf("%.2f",$n);
+ echo "\n";
+ 
+ $m = 123.3253;
+ $n = 27.155;
+
+ printf("%07.2f \n",$m); 
+ printf("%07.2f \n",$n);
+
+
+
+
+
+$fname = "Isac";
+ $lname = "Newton";
+ $output = sprintf("His name is %s %s",$fname, $lname);
+echo strtoupper($output)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+ 
+ /*
+ 
+ $fname = "Toufiq";
+ $lname = "Elahi";
+ $middlename = "Sumon";
+ printf('His name is %2$s %1$s %3$s, $fname,$middlename,$lname);
+ 
+ 
+ //$print("Tha Binary eqivalant %d is %b",12,12);
+ 
+ 
+  
+ /*
+ $fname = "Toufiq";
+ $lname = "Elahi";
+ $middlename = "Sumon";
+ //printf('His name is %2$s, %1$s ,%3$s, $fname,$middlename,$lname);
+ echo"\n";
+ 
+ //$print("Tha Binary eqivalant %d is %b",12,12);
+ 
+ 
+
+ 
+ 
+ $n = 12;
+ $o = 016;
+ $h = 0x2B;
+//printf("The Number is %d %d %d",$n, $o,$h);
+
+printf("The Binary eqivalant of %d is %b\n",15,15);
+printf("The Hexadecimal eqivalant of %d is %x \n",1212,1212);
+printf("The Octal eqivalant of %d is %o \n",27,27);
+
+printf("The Octal eqivalant of %d is %o \n",65536,65536);
+printf("Octal %o = %d",0200000,0200000);
+ 
+ $fname = "Isacc";
+ $lname = "Newton"
+ $n = 7;
+ $m = $n++;
+ echo $m, "\n", $n;
+ 
+ 
+ 
+ $number = 7;
+ $number++;
+ echo $number;
+ 
+ 
+ 
+ 
+ 
+ $a = 7;
+ $x = $y = $a;
+ echo $x,"\n",$y;
+ 
+ 
+ 
+ 
+ 
+ //$number = 12 + 3;//operand operator
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ $number1 = 12;
+$number2 = 6;
+ $number3= $number1 / $number2;
+// $number --;
+echo $number3;
+
+// + * / % Arithmic operator
+//+= -= Assignment Operator
+
+
+
+
+
+
+
+
+
+
+ //$number += 13;
+//echo $number;
+//$number2 = $number - 20;
+
+//$number = 12*2;
+
+//echo $number,"\n",$number2;
+//$number = (13-5)*6;
+//echo $number;
+//$number = (24-4) / (7-2);
+//echo $number;
+
+
+
+
+
+
+
+
 $planet1 = "Mercary";
 $planet2 = "Jupitar";
 echo "The smallest planet is ".$planet1." and the biggest planet is ".$planet2."\n"; //"<br/>";
@@ -45,7 +358,7 @@ var_dump($result);
 
 $name ="Earth";
 $uname = strtoupper($name);
-echo "We're living on {$uname}\n";
+//echo "We're living on {$uname}\n";
 
 printf("We are Living on %s",$name);
 
@@ -188,5 +501,5 @@ $my_name = "";
 $myName="";
 $myBeautifullvariable = "";
 
-
+*/
 

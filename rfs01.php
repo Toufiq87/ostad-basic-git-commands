@@ -1,10 +1,44 @@
 <?php
 
+$tuition = <Tuition Fee>;
+
+$commission = ($tuition > 20000) ? ($tuition * 0.25) :
+              (($tuition > 10000 && $tuition < 20000) ? 0.2 * $tuition :
+              (($tuition > 7000 && $tuition < 10000) ? 0.15 * $tuition :
+              ("Invalid data")));
+              
+echo "Commission: $commission";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+<?php
+$fname = "Toufiq";
+$lname = "Elahi";
+$middlename = "Sumon";
+printf('His name is %2$s %1$s %3$s, $fname,$middlename,$lname);
+
+
+//$print("Tha Binary eqivalant %d is %b",12,12);
+
+
+
 $planet1 = "Mercary";
 $planet2 = "Jupitar";
 echo "The smallest planet is ".$planet1." and the biggest planet is ".$planet2."\n"; //"<br/>";
 echo "The smallest planet is {$planet1} and the biggest planet is {$planet2}\n"; 
-printf("The smallest planet is %s and the biggest planet is %s\n",strtoupper($planet1), strreev($planet2));
+printf("The smallest planet is %s and the biggest planet is %s\n",strtoupper($planet1), strrev($planet2));
 
 
 
