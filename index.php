@@ -1,7 +1,123 @@
 <?php
 
 
-$tuition = <Tuition Fee>;
+
+$color = "White";
+if($color == "Blue")
+print "Color is : Blue";
+elseif ("Color == 'Red")
+print "Color is: Red";
+elseif($color == "Yellow")
+print "Color is:Yellow";
+else
+print "Color is undefined";
+
+
+
+
+
+
+
+
+
+/*
+$color = "Blue";
+if ($color=='Blue')
+print "Color is Blue";
+else
+print "Color is not Blue";
+
+
+
+
+
+
+
+
+
+
+/*
+if($age >=18);
+echo "Happy Birthday!!";
+else
+echo "You are below 18";
+
+
+
+
+
+
+
+
+
+
+
+/*
+$t = 30;
+echo "The hour (of the server) is " . $t; 
+echo PHP_EOL;
+echo ", and will give the following message:";
+
+if ($t < "10") {
+  echo "Have a good morning!";
+} elseif ($t < "20") {
+  echo "Have a good day!";
+} else {
+  echo "Have a good night!";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+$t = date("H");
+echo$t;
+
+
+
+
+
+
+/*
+if (condition) {
+    code to be executed if condition is true;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$tuition = <5000>;
 
 $commission = ($tuition > 20000) ? ($tuition * 0.25) :
               (($tuition > 10000 && $tuition < 20000) ? 0.2 * $tuition :

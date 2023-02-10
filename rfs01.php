@@ -1,5 +1,43 @@
 <?php
 
+
+$score = 87;
+
+switch (true) {
+    case ($score >= 81 && $score <=100):
+        $grade = 'A';
+        break;
+    case ($score >= 70):
+        $grade = 'B';
+        break;
+    case ($score >= 70):
+        $grade = 'C';
+        break;
+    case ($score >= 60):
+        $grade = 'D';
+        break;
+    default:
+        $grade = 'F';
+        break;
+}
+
+echo "Your grade is: $grade";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 $tuition = <Tuition Fee>;
 
 $commission = ($tuition > 20000) ? ($tuition * 0.25) :
