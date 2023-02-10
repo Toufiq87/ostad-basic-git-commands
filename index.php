@@ -2,6 +2,30 @@
 
 
 
+switch ($color){
+    case "Blue":
+    echo "This color is Blue";
+    break;
+    case "Yellow":
+    echo "This color is Yellow";
+    break;
+    case "Green":
+    echo "This color is Green";
+    break;
+    default:
+    print "Not specific colour found";
+}
+
+
+
+
+
+
+
+
+
+
+/*
 $color = "White";
 if($color == "Blue")
 print "Color is : Blue";
