@@ -1,14 +1,56 @@
 <?php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+$x="70";
+$output=($x>=100)?(($x>=500)?("bd"):("outside bd")):(($x<50)?("nativ elien"):("cross platform elien"));
+echo $output;
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+// $number = 10;
+// if ($number %2 === 0) {
+//     $result = 'Even';
+// } else {
+//     $result = 'odd';
+// }
+// echo $result;
+
 $number = 10;
-if ($number %2 === 0) {
-    $result = 'Even';
-} else {
-    $result = 'odd';
-}
+$result = ($number>50)?(($number>100)?("Greater than 100"):("Greater then 50 but less than 100")):(($number<10)?("Bellow 10"):("Invalid data"));
 echo $result;
 
-
-
+// $Name = "Abba";
+// $result = ($Name="kak")?("True"):("False");
+// echo $result;
 
 
 
