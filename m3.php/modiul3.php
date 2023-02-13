@@ -1,8 +1,124 @@
 <?php
-include_once "functions.php";
-$x = 0;
 
-echo "Factorial of {$x} is ".factorial($x);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+// include_once "functions.php";
+// $ft = "গরীবে নেওয়াজ";
+// $n = "মদদ কুন ইয়া";
+
+// serve($ft, $n);
+
+
+// function sum(int ...$numbers):int {
+//     $result = 0;
+//     for($i=0;$i<count($numbers);$i++){
+//         $result += $numbers[$i];
+//     }
+//     retern $result;
+    
+// }
+// echo sum(5,6);
+// function doTaskA(){
+//     echo "Step A Done\n";
+//}
+
+//function doTheLaregertask(){
+    function doTaskA(){
+        echo  "Step A Done\n";
+    }
+    function doTaskB(){
+        echo  "Step B Done\n";
+    }
+    function doTaskC(){
+        echo  "Step C Done\n";
+    }
+    function doTaskD(){
+        echo  "Step D Done\n";
+    }
+    function doTaskE(){
+        echo  "Step E Done\n";
+    }
+
+    echo "doTaskA();
+    echo "doTaskB();
+    echo "doTaskC();
+    echo "doTaskD();
+    echo "doTaskE();
+}
+ 
+doTheLargerTask();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function sum($x, $y, int ...$numbers):int {
+//     echo $x,"\n";
+//     $result = 0;
+//     for($i=0;$i<count($numbers);$i++){
+//         $result += $numbers[$i];
+//     }
+//     return $result;
+// }
+// echo sum(5,6,1,2,3,4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function sum(int $x,int $y,int $z){
+//     return $x+$y+$z;
+// }
+// echo sum(5,6,7,8);
+
+
+
+
+
+
+
+
+// $x = 0;
+
+// echo "Factorial of {$x} is ".factorial($x);
 
 
 

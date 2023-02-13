@@ -21,3 +21,11 @@ return $result;
 
 
 
+function serve($foodType,$numberOfItems){
+    echo "{$numberOfItems}  {$foodType} আল-হামদুলিল্লাহ";
+}
+
+
+// function serve($foodType,$numberOfItems){
+//     echo "{$numberOfItems}" of {$foodType} has been served";
+// }
