@@ -1,6 +1,8 @@
 <?php
-
-
+echo 'hellow';
+function ($n1, $n2, $n3){
+    echo count(function_get_args());
+}
 
 
 
