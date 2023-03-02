@@ -2,21 +2,21 @@
 
 // Task = 01
 
-// <!DOCTYPE html>
-// <html lang="en">
-// <head>
-//   <title> sumon</title>
-//   <meta charset="UTF-8">
-//   <form>
-//     <label for="name">Name:</label>
-//     <input type="text" id="name" name="name"><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> sumon</title>
+  <meta charset="UTF-8">
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
   
-//     <label for="email">Email:</label>
-//     <input type="email" id="email" name="email"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br>
   
-//     <input type="submit" value="Submit">
-//   </form>
-//   </html>
+    <input type="submit" value="Submit">
+  </form>
+  </html>
   
 
 
@@ -24,67 +24,67 @@
 
 // Task = 02
 
-// class Person {
-//     private $name;
-//     private $email;
+class Person {
+    private $name;
+    private $email;
     
-//     public function setName($name) {
-//         $this->name = $name;
-//     }
+    public function setName($name) {
+        $this->name = $name;
+    }
     
-//     public function setEmail($email) {
-//         $this->email = $email;
-//     }
+    public function setEmail($email) {
+        $this->email = $email;
+    }
     
-//     public function getName() {
-//         return $this->name;
-//     }
+    public function getName() {
+        return $this->name;
+    }
     
-//     public function getEmail() {
-//         return $this->email;
-//     }
-// }
-// $person = new Person();
-// $person->setName("Toufiq Elahi");
-// $person->setEmail("toufiqelahi@gmail.com.com");
+    public function getEmail() {
+        return $this->email;
+    }
+}
+$person = new Person();
+$person->setName("Toufiq Elahi");
+$person->setEmail("toufiqelahi@gmail.com.com");
 
-// echo "Name: " . $person->getName() . "<br>\n";
-// echo "Email: " . $person->getEmail() . "<br>";
+echo "Name: " . $person->getName() . "<br>\n";
+echo "Email: " . $person->getEmail() . "<br>";
 
 // task = 03
 
-// <!DOCTYPE html>
-// <html lang="en">
-// <head>
-//   <title> sumon</title>
-//   <meta charset="UTF-8">
-//   <form>
-//     <label for="name">Name:</label>
-//     <input type="text" id="name" name="name"><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> sumon</title>
+  <meta charset="UTF-8">
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
   
-//     <label for="email">Email:</label>
-//     <input type="email" id="email" name="email"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br>
   
-//     <input type="submit" value="Submit">
-//   </form>
-//   </html>
+    <input type="submit" value="Submit">
+  </form>
+  </html>
 
   
-//   include('Person.php');
+  include('Person.php');
 
-//   $name = $_POST['Toufiq Elahi'];
-//   $email = $_POST['toufiqelahi@gmail.com'];
+  $name = $_POST['Toufiq Elahi'];
+  $email = $_POST['toufiqelahi@gmail.com'];
   
 
-//   $person = new Person();
+  $person = new Person();
   
   
-//   $person->setName($name);
-//   $person->setEmail($email);
+  $person->setName($name);
+  $person->setEmail($email);
   
   
-//   echo "Name: " . $person->getName() . "<br>";
-//   echo "Email: " . $person->getEmail() . "<br>";
+  echo "Name: " . $person->getName() . "<br>";
+  echo "Email: " . $person->getEmail() . "<br>";
   
   
 
