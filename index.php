@@ -1,4 +1,38 @@
 <?php
+?php
+class Rahim {
+
+public function message()
+{
+echo "i am your father Rahim";
+
+}
+
+}
+class Karim {
+  
+ 
+   public function message1() {
+    echo "I am Your Father Karim "; 
+  }
+  
+}
+
+
+class Son extends Rahim {
+  public function message2() {
+    echo "Am I Your son? "; 
+  }
+}
+
+class Son extends Karim {
+    public function message2() {
+      echo "Am I Your son? "; 
+    }
+  }
+
+
+?>
 echo 'hellow';
 function ($n1, $n2, $n3){
     echo count(function_get_args());
