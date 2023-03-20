@@ -1,19 +1,8 @@
-<?php
 
 
-$file_name = "ostad.txt";
-$file = fopen($file_name, "a+");
 
-if(file_exists($file_name)) {
-  $content = fread($file, filesize($file_name));
-  fseek($file, 0);
-  fwrite($file, $content . date("2023-11-12 H:i:s"));
-} else {
-  fwrite($file, date("2023-11-12 H:i:s"));
-}
 
-fclose($file);
-
+?
 
 // /**
 //  * Determins if the argument is even or odd
