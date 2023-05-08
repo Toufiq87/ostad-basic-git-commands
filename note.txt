@@ -1,1 +1,96 @@
-Hellow World
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>BMI Calculator</title>
+</head>
+<body>
+	<div class="container">
+		<h1>BMI Calculator</h1>
+		<form>
+			<label for="weightInput">Weight (kg):</label>
+			<input type="number" id="weightInput">
+			<label for="heightInput">Height (cm):</label>
+			<input type="number" id="heightInput">
+			<button id="calculateBtn">Calculate BMI</button>
+		</form>
+		<p id="result"></p>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
+const weightInput = document.getElementById('weightInput');
+const heightInput = document.getElementById('heightInput');
+const result = document.getElementById('result');
+
+function calculateBMI() {
+  const weight = Number(weightInput.value);
+  const height = Number(heightInput.value) / 100;
+  const bmi = weight / (height * height);
+  result.innerText = `Your BMI is ${bmi.toFixed(1)}.`;
+}
+
+const calculateBtn = document.getElementById('calculateBtn');
+calculateBtn.addEventListener('click', calculateBMI);
+body {
+	font-family: 'Roboto', sans-serif;
+	background-image: url('https://source.unsplash.com/1600x900/?fitness');
+	background-size: cover;
+	background-position: center;
+}
+
+.container {
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.7);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+
+h1 {
+	text-align: center;
+	color: #222;
+	margin-bottom: 30px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	margin-top: 20px;
+	color: #444;
+	font-size: 1.2em;
+}
+
+input {
+	padding: 10px;
+	font-size: 1.2em;
+	border: none;
+	border-radius: 5px;
+}
+
+button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 1.2em;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #444;
+}
+
+p#result {
+	margin-top: 30px;
+	text-align: center;
+	color: #222;
+	font-size: 1.5em;
+}
