@@ -1,20 +1,117 @@
-SELECT * FROM employees;
+use Illuminate\Http\Request;
 
-SELECT name, salary FROM employees WHERE salary > 50000;
+// Assuming this code is inside a route or controller method handling the POST request
+public function handleFormSubmission(Request $request)
+{
+    $name = $request->input('name');
+    
+    // Use the $name variable as needed
+    
+    // Example: Return a response with the $name value
+    return "Hello, " . $name . "!";
 
-SELECT AVG(salary) FROM employees;
+    // Example: Perform further processing or validation with $name
+    if (!empty($name)) {
+        // Perform some logic
+    }
+}
+use Illuminate\Http\Request;
 
-SELECT COUNT(*) FROM employees WHERE department_id = (SELECT id FROM departments WHERE name = 'Marketing');
+// Assuming this code is inside a route or controller method
+public function retrieveUserAgent(Request $request)
+{
+    $userAgent = $request->header('User-Agent');
+    
+    // Use the $userAgent variable as needed
+    
+    // Example: Return the User-Agent value
+    return "User-Agent: " . $userAgent;
 
-UPDATE employees SET salary = 60000 WHERE id = 1001;
+    // Example: Perform some logic based on the User-Agent
+    if (strpos($userAgent, 'Firefox') !== false) {
+        // Do something specific for Firefox browser
+    }
+}
+use Illuminate\Http\Request;
 
-DELETE FROM employees WHERE salary < 30000;
+// Assuming this code is inside a route or controller method
+public function handleGetRequest(Request $request)
+{
+    $page = $request->input('page', null);
+    
+    // Use the $page variable as needed
+    
+    // Example: Return the value of the 'page' parameter
+    return "Page: " . $page;
 
-SELECT name, manager FROM departments WHERE name = 'Finance';
+    // Example: Perform some logic based on the 'page' parameter
+    if ($page !== null && is_numeric($page)) {
+        // Do something with the page number
+    }
+}
+use Illuminate\Http\Response;
 
-SELECT departments.name, COUNT(*) FROM employees JOIN departments ON employees.department_id = departments.id GROUP BY departments.name;
+public function createJsonResponse()
+{
+    $data = [
+        'message' => 'Success',
+        'data' => [
+            'name' => 'John Doe',
+            'age' => 25
+        ]
+    ];
 
-INSERT INTO departments (name, manager) VALUES ('Research', 'Toufiq Elahi');
+    return response()->json($data, Response::HTTP_OK);
+}
+use Illuminate\Http\Request;
+
+// Assuming this code is inside a route or controller method
+public function handleFileUpload(Request $request)
+{
+    if ($request->hasFile('avatar')) {
+        $uploadedFile = $request->file('avatar');
+        $storedPath = $uploadedFile->store('uploads', 'public');
+        
+        // $storedPath now contains the relative path of the stored file
+        
+        // Example: Return a response with the stored file path
+        return "File uploaded successfully: " . $storedPath;
+
+        // Example: Perform further processing or logic with the stored file
+        // e.g., Save the file path in the database, manipulate the file, etc.
+    }
+}
+use Illuminate\Http\Request;
+
+// Assuming this code is inside a route or controller method
+public function retrieveRememberToken(Request $request)
+{
+    $rememberToken = $request->cookie('remember_token', null);
+
+    // Use the $rememberToken variable as needed
+    
+    // Example: Return the value of the 'remember_token' cookie
+    return "Remember Token: " . $rememberToken;
+
+    // Example: Perform some logic based on the 'remember_token' cookie
+    if ($rememberToken !== null) {
+        // Do something with the remember token
+    }
+}
+Create a route in Laravel that handles a POST request to the '/submit' URL. Inside the route closure, retrieve the 'email' input parameter from the request and store it in a variable called $email. Return a JSON response with the following data:
+
+
+{
+
+
+    "success": true,
+
+
+    "message": "Form submitted successfully."
+
+
+}
+
 
 
 
