@@ -20,7 +20,7 @@ Route::get('/home', function () {
   return redirect('/dashboard');
 });
 php artisan make:middleware LogRequests
-<?php
+
 
 namespace App\Http\Middleware;
 
