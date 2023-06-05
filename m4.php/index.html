@@ -1,88 +1,26 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>BMI Calculator</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        font-family: "Montserrat", sans-serif;
-        background-image: url("https://source.unsplash.com/random/800x600");
-        background-size: cover;
-      }
+//laravel new MigrationAssignment
+//php artisan make:migration create_products_table
+<?php
 
-      form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 80px;
-      }
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
-      input {
-        margin-bottom: 20px;
-        padding: 10px;
-        border-radius: 5px;
-        border: none;
-        font-size: 16px;
-        width: 250px;
-        text-align: center;
-      }
+class CreateProductsTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('products', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->decimal('price');
+            $table->text('description');
+            $table->timestamps();
+        });
+    }
 
-      button {
-        background-color: #3366cc;
-        color: white;
-        padding: 10px;
-        border-radius: 5px;
-        border: none;
-        font-size: 16px;
-        width: 250px;
-        cursor: pointer;
-      }
-
-      h2 {
-        margin-top: 20px;
-        font-size: 24px;
-        font-weight: bold;
-        text-align: center;
-        color: #3366cc;
-      }
-    </style>
-  </head>
-
-  <body>
-    <form>
-      <input type="number" id="weightInput" placeholder="Enter your weight in kg" />
-      <input type="number" id="heightInput" placeholder="Enter your height in cm" />
-      <button id="calculateBtn">Calculate BMI</button>
-    </form>
-
-    <h2 id="result"></h2>
-
-    <script>
-      const calculateBMI = () => {
-        const weight = parseFloat(document.getElementById("weightInput").value);
-        const height = parseFloat(document.getElementById("heightInput").value) / 100;
-        const bmi = weight / (height * height);
-
-        document.getElementById("result").innerText = `Your BMI is: ${bmi.toFixed(2)}`;
-      };
-
-      document.getElementById("calculateBtn").addEventListener("click", calculateBMI);
-    </script>
-  </body>
-</hfunction addListItem() {
-  // Select the element with an id of "myList"
-  const myList = document.getElementById("myList");
-
-  // Create a new list item
-  const newListItem = document.createElement("li");
-  newListItem.innerText = "Apples";
-
-  // Add the new list item to the end of the list
-  myList.appendChild(newListItem);
+    public function down()
+    {
+        Schema::dropIfExists('products');
+    }
 }
-tml>
